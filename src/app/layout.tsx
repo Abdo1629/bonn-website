@@ -1,12 +1,12 @@
-
-
+import I18nProvider from "./i18n-provider";
 import type { Metadata } from "next";
-import { Roboto_Slab, Geist_Mono } from "next/font/google";
 import "./globals.css";
-const geistSans = Roboto_Slab({
+import { Fjalla_One , Geist_Mono} from "next/font/google";
+
+const geistSans = Fjalla_One({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 const geistMono = Geist_Mono({
@@ -20,48 +20,68 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bonn Medical Industry",
-  description: "BMI is a medical manufacturer located in Riyadh, Saudi Arabia. Equipped with the latest and up to date machines and equipment that meet cGMP requirement, we are confident that we are able to provide the latest and novel products, services and formulations, either for standard formulations as well as bespoke preparations when required.",
+  title: "Bonn Medical Industry | GMP Certified Manufacturer in Saudi Arabia",
+  description:
+    "BMI is a certified Saudi medical manufacturer producing cosmetics, medical devices, and health products. Licensed by SFDA and compliant with GMP, ISO 9001, ISO 13485, and more.",
   keywords: [
-    "Bonn Med",
-    "Bonn",
-    "Medical Industry",
-    "Skin Care",
-    "Pharmaceuticals",
-    "medical",
-    "creams",
-    "cosmetics",
-    "Saudi Arabia",
+    "Bonn Medical Industry",
+    "BonnMed",
+    "Saudi Arabia manufacturing",
+    "Medical manufacturer Riyadh",
+    "Cosmetics private label KSA",
+    "GMP Saudi Arabia",
+    "ISO certified manufacturer",
+    "Skincare manufacturing",
+    "Medical devices Saudi",
+    "OEM cosmetics supplier",
+    "Health products factory",
+    "Private label cosmetics MENA"
   ],
   authors: [{ name: "Bonn Medical Industry" }],
   creator: "Bonn Medical Industry",
   openGraph: {
-    title: "Bonn Medical Industry",
-    description: "BMI is a medical manufacturer located in Riyadh, Saudi Arabia. Equipped with the latest and up to date machines and equipment that meet cGMP requirement, we are confident that we are able to provide the latest and novel products, services and formulations, either for standard formulations as well as bespoke preparations when required.",
+    title: "Bonn Medical Industry | Certified Medical Manufacturer",
+    description:
+      "Certified medical manufacturer in Riyadh, Saudi Arabia. Specialized in topical pharmaceuticals, cosmetics, medical devices, and food supplements. GMP & ISO compliant.",
     url: "https://www.bonnmed.com",
-    siteName: "Bonn",
+    siteName: "Bonn Medical Industry",
     locale: "en_US",
     type: "website",
-  }
-  };
+    images: [
+      {
+        url: "https://www.bonnmed.com/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bonn Medical Industry Facility",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bonn Medical Industry | Certified Manufacturer in KSA",
+    description:
+      "Bonn Medical Industry is a leading GMP & ISO certified factory in Saudi Arabia for cosmetics, medical devices, and health products.",
+    creator: "@bonnmed", 
+    images: ["https://www.bonnmed.com/og-cover.jpg"], 
+  },
+};
 
-  
 export const viewport = {
   width: 'device-width',
   initialScale: 1
-}
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" dir="ltr" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <I18nProvider>
+          {children}
+        </I18nProvider>
       </body>
     </html>
   );

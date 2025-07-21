@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "brand": "Bonn",
+    "image": "/products/bonn/toner.jpg",
+    "price": 40
+  },
+  {
+    "id": 2,
+    "brand": "Bonn",
+    "image": "/products/bonn/coco.jpg",
+    "price": 60
+  },
+    {
+        "id": 3,
+        "brand": "Bonn",
+        "image": "/products/bonn/cream.jpg",
+        "price": 50
+    },
+    {
+        "id": 4,
+        "brand": "Bonn",
+        "image": "/products/bonn/shampoo.jpg",
+        "price": 70
+    },
+    {
+        "id": 5,
+        "brand": "Bonn",
+        "image": "/products/bonn/bodywash.jpg",
+        "price": 55
+    }
+]
