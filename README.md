@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bonn Medical Industries — Corporate Website
 
-## Getting Started
+A production-oriented bilingual corporate website for Bonn Medical Industries, a Saudi medical manufacturing company.
 
-First, run the development server:
+## Live Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://www.bonnmed.com
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The project provides a modern digital presence for a medical manufacturing company, presenting its products, company information, and contact experience through a responsive web application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Highlights
 
-## Learn More
+- Responsive corporate website
+- Product-focused content structure
+- Company and product information pages
+- Contact and inquiry flows
+- Bilingual interface
+- Search and filtering capabilities
+- Interactive UI and animations
+- Structured backend/data integration
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Prisma
+- i18next / react-i18next
+- Fuse.js
+- Framer Motion
+- Lucide React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## My Role
 
-## Deploy on Vercel
+Designed and developed the web application, including the responsive frontend, reusable UI components, bilingual experience, product presentation, and application/data integration.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Status
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Production project.
+
