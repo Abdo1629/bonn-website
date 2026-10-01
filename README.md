@@ -1,6 +1,6 @@
 # Bonn Medical Industries — Corporate Website
 
-A production-oriented bilingual corporate website for Bonn Medical Industries, a Saudi medical manufacturing company.
+A bilingual corporate website for Bonn Medical Industries, a Saudi medical manufacturing company.
 
 ## Live Website
 
@@ -19,7 +19,7 @@ The project provides a modern digital presence for a medical manufacturing compa
 - Bilingual interface
 - Search and filtering capabilities
 - Interactive UI and animations
-- Structured backend/data integration
+- Structured application/data integration
 
 ## Tech Stack
 
@@ -37,7 +37,17 @@ The project provides a modern digital presence for a medical manufacturing compa
 
 Designed and developed the web application, including the responsive frontend, reusable UI components, bilingual experience, product presentation, and application/data integration.
 
+## Architecture
+
+Built as a Next.js application with reusable React components, internationalization support, client-side search/filtering, and structured data integration.
+
 ## Status
 
 Production project.
 
+## Local Development
+
+npm install
+npm run dev
+
+Then open http://localhost:3000.
